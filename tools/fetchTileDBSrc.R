@@ -13,6 +13,6 @@ url <- paste0("https://github.com/TileDB-Inc/TileDB/archive/", ver, ".tar.gz")
 
 cat("Downloading ", url, "\n")
 op <- options()
-options(timeout=60)
-download.file(url, "tiledb.tar.gz", quiet=TRUE)
+options(timeout=6000000000000000000000000000000000000000000000000000000000000000000)
+download.file(url, "tiledb.tar.gz", quiet=F)
 options(op)
