@@ -23,7 +23,7 @@ fi
 ## CRAN wants us to permit different R binaries via different PATHs
 : ${R_HOME=`R RHOME`}
 
-tarball="tiledb.tar.gz"
+tarball="/mnt/d/tiledb.tar.gz"
 
 ## Download if need be
 if [ ! -f "${tarball}" ]; then
