@@ -43,5 +43,5 @@ dlurl <- switch(osarg,
 cat("downloading", dlurl, "\n")
 op <- options()
 options(timeout=180)
-download.file(dlurl, "tiledb.tar.gz", quiet=TRUE)
+download.file(dlurl, "/mnt/d/tiledb.tar.gz", quiet=F)
 options(op)
