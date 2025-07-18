@@ -19,7 +19,7 @@ fi
 
 cd src
 
-if [ ! -f tiledb.tar.gz ]; then
+if [ ! -f /mnt/d/tiledb.tar.gz ]; then
     echo -n "Downloading ${url}: "
     ${R_HOME}/bin/Rscript ../tools/fetchTileDBSrc.R ${url}
 fi
@@ -27,9 +27,9 @@ fi
 if [ ! -d tiledb-src ]; then
     uname=`uname`
     if test x"${uname}" = x"Darwin" -o x"${uname}" = x"SunOS"; then
-        gunzip tiledb.tar.gz
-        tar -xf tiledb.tar
-        mv Tile* tiledb-src
+        gunzip /mnt/d/tiledb.tar.gz
+        tar -xf /mnt/d/tiledb.tar
+        mv /mnt/d/Tile* tiledb-src
         rm tiledb.tar
     else
         mkdir tiledb-src
