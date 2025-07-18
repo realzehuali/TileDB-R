@@ -30,12 +30,12 @@ if (arg == "default") {
     url <- arg
 }
 
-if (!file.exists("tiledb.tar.gz")) {
+if (!file.exists("/mnt/d/tiledb.tar.gz")) {
     op <- options()
     options(timeout=180)
 
     cat(url, " ...\n")
-    download.file(url, "tiledb.tar.gz", quiet=TRUE)
+    download.file(url, "/mnt/d/tiledb.tar.gz", quiet=TRUE)
 
     ## special case of nightly download from GitHub which comes only as a zipfile
     ## so we first unzip the file now downloaded to tiledb.tar.gz, and then create the tar
